@@ -131,7 +131,7 @@ public class LocationService extends Service implements ProviderDelegate {
     public IBinder onBind(Intent intent) {
         logger.debug("Client binds to service");
 
-        stopForeground(true);
+        //stopForeground(true);
         mIsBound = true;
         return mBinder;
     }
@@ -140,7 +140,7 @@ public class LocationService extends Service implements ProviderDelegate {
     public void onRebind(Intent intent) {
         logger.debug("Client rebinds to service");
 
-        stopForeground(true);
+        //stopForeground(true);
         mIsBound = true;
         super.onRebind(intent);
     }
@@ -158,7 +158,7 @@ public class LocationService extends Service implements ProviderDelegate {
                     config.getLargeNotificationIcon(),
                     config.getSmallNotificationIcon(),
                     config.getNotificationIconColor());
-            startForeground(NOTIFICATION_ID, notification);
+            //startForeground(NOTIFICATION_ID, notification);
         }
         mIsBound = false;
         return true; // Ensures onRebind() is called when a client re-binds.
