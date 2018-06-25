@@ -5,7 +5,7 @@ using Gradle 3
 
 # Installation
 
-`yarn add https://github.com/kruyvanna/react-native-background-geolocation.git`
+`yarn add https://github.com/ashrithks/react-native-background-geolocation.git`
 
 `react-native link react-native-mauron85-background-geolocation`
 
